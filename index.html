@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="build/css/styles.css" type="text/css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Medical</title>
+  </head>
+  <body>
+    <form id="medicalForm" action="index.html" method="post">
+      <label for="">Enter a medical issue:</label>
+      <input id="medicalInput" type="text" name="" value="">
+      <button id="medicalButton" type="button" name="submit">Search</button>
+    </form>
+    <section id="showResults">
+      <div class="individualResult">
+        <div class="practiceInfo">
+          <h1>Office Name</h1>
+          <h2><em>Specialty 1<br>Specialty 2<br>Specialty 3</em></h2>
+          <h3>123 NW Fake Address<br>City, ST 00000</h3>
+          <h3>phone: 0000000000</h3>
+          <h3><a href="#">website</a></h3>
+          <h4>Accepts new patients: ###</h4>
+          <form class="insuranceForm" action="index.html" method="post">
+            <label for="insuranceToggle">
+            <input type="checkbox" name="" value=""> Show Insurance Providers</label>
+          </form>
+          <h4>Languages:</h4>
+          <ul>
+            <li>English</li>
+            <li>Spanish</li>
+          </ul>
+        </div>
+        <div class="doctorInfo">
+          <img src="#" alt="">
+          <h2>First Last, MD</h2>
+          <p>BIO: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Education:</h3>
+          <ul>
+            <li>school</li>
+            <li>degree</li>
+          </ul>
+          <ul>
+            <li>school</li>
+            <li>degree</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
