@@ -1,0 +1,17 @@
+{
+  "name": "medical",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Tyler Allen <mynameistylerallen@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
