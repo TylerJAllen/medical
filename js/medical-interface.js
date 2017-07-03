@@ -8,7 +8,7 @@ Issue.prototype.displayDoctors = function(){
   for(var i = 0; i < length; i++){
     console.log("inside loop test - start");
     var output = array[i];
-    $('#showResults').append('<div class="individualResult"><div class="practiceInfo"><h1>' +
+    $('#showResults').append('<div class="individualResult"><div class="practiceAndDoctorInfo"><div class="practiceInfo"><h1>' +
     output.practiceName + '</h1><h3>' +
     output.street + '<br>' +
     output.city + '<br>' +
@@ -22,19 +22,26 @@ Issue.prototype.displayDoctors = function(){
     output.firstName + ' ' +
     output.lastName + ', ' +
     output.title + '</h2><p>' +
-    output.bio + '</p></div></div>'
+    output.bio + '</p></div></div><div class="insuranceColumn"><ul class="insuranceResults"></ul></div></div>'
     );
   }
-  $('#showResults').show();
+  $('#showResultsWrapper').show();
 };
+
+// for(var i = 0; i < output.insurances.length; i++){
+//   return '<li>' + output.insurances[i] + '</li>';
+// }
 
 $(function(){
   $("#medicalForm").submit(function(e){
     e.preventDefault();
+    console.log("test");
     $('#showResults').empty();
     var medicalIssue = $("#medicalInput").val();
     var NewIssue = new Issue(medicalIssue);
     NewIssue.getDoctors(function(){NewIssue.displayDoctors();});
     // NewIssue.displayDoctors();
   });
+
+  // $('')
 });

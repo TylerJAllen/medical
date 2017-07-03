@@ -8,8 +8,8 @@ function Issue(input){
 
 //extracts info from API objects into smaller objects and pushes smaller objects to Issue.resultsArray, using for loop
 Issue.prototype.extractDoctorInfo = function(input){
-  var length = input.length;
-  for(var i = 0; i < length; i++){
+  var inputLength = input.length;
+  for(var i = 0; i < inputLength; i++){
     var practices = input[i].practices[0];
     var addresses = practices.visit_address;
     var profiles = input[i].profile;
@@ -19,6 +19,7 @@ Issue.prototype.extractDoctorInfo = function(input){
     } else {
       newPatientsYesOrNo = "No";
     }
+
     var individualPractice = {
       practiceName: practices.name,
       street: addresses.street,
